@@ -14,9 +14,9 @@ func main() {
 		fmt.Fscan(os.Stdin, &num)
 		arr = append(arr, num)
 
-	min := Average(arr) - StandardDeviation(arr)
-	max := Average(arr) + StandardDeviation(arr)
-	fmt.Println(min, max)
+		min := Average(arr) - Average(arr)
+		max := Average(arr) + Average(arr)
+		fmt.Println(min, max)
 	}
 }
 
